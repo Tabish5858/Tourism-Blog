@@ -9,7 +9,23 @@ body {
     width: 100%;
     height: 100%;
 }
-
+#scroll{
+    position: fixed;
+    bottom: 8%;
+    right: 4%;
+    /* background-color: rebeccapurple; */
+    z-index: 999;
+}
+#scroll>button{
+    width: 7vh;
+    height: 7vh;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 4.5vh;
+}
+#scroll>button:hover{
+   background-color: #eeee;
+}
 
 /* ********** Navigation Bar ************** */
 
@@ -141,7 +157,7 @@ nav {
     align-items: center;
 }
 
-#imgBox1 {
+.imgBox1 {
     position: absolute;
     left: 10%;
     display: flex;
@@ -155,9 +171,14 @@ nav {
     z-index: 999;
     background: hsla(60, 17%, 91%, 0.749);
     backdrop-filter: blur(1rem);
+    top: 25%;
 }
 
-.imgbox {
+.imgBox {
+    position: absolute;
+     overflow: hidden;
+    width: 00%;
+    height: 100%;
     position: absolute;
 }
 
