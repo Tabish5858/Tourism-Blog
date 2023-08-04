@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+  <div id="theMain">
+     <header>
         <nav>
             <div id="navRight">
                 <img src="—Pngtree—business logo design free logo_915991.png" alt="">
@@ -71,17 +73,17 @@
             </div>
         </nav>
     </header>
-    
+
     <div id="main">
-       <div id="scroll"> <button  onclick="scrollToTop()">🔝</button></div>
-       
-       <div id="page1">
+        <!-- <div id="scroll"> <button onclick="scrollToTop()">🔝</button></div> -->
+
+        <div id="page1">
             <div id="firstHead">
                 <h1>Editor's Pick</h1>
                 <h3>Discover The Most Outstanding Atricle Of All Time</h3>
             </div>
             <div id="firstImgBox">
-                <div class="imgBox" >
+                <div class="imgBox">
                     <div class="imgBox1">
                         <div id="firstBoxHead">
                             <h4>Industrial</h4>
@@ -89,32 +91,32 @@
                         </div>
                         <div id="firstBoxData">
                             <div class="firstData" id="dataImg">
-                            <!-- <i class="ri-account-circle-line"></i> -->
-                            <img src="first acct.png" alt="">
+                                <!-- <i class="ri-account-circle-line"></i> -->
+                                <img src="first acct.png" alt="">
+                            </div>
+                            <div class="firstData" id="dataText">
+                                <h4>Mr. Chaku</h4>
+                                <h5>May 20,2023</h5>
+                            </div>
                         </div>
-                        <div class="firstData" id="dataText">
-                            <h4>Mr. Chaku</h4>
-                            <h5>May 20,2023</h5>
+                        <div class="firstData" id="firstBoxBtn">
+                            <div id="firstBtn1">
+                                <button>
+                                    <i class="ri-heart-line ri-lg"></i>
+                                </button>
+                                <button>
+                                    <i class="ri-message-2-line ri-lg"></i>
+                                </button>
+                            </div>
+                            <div id="firstBtn2">
+                                <button><i class="ri-bookmark-line ri-lg"></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="firstData" id="firstBoxBtn">
-                        <div id="firstBtn1">
-                            <button>
-                                <i class="ri-heart-line ri-lg"></i>
-                            </button>
-                            <button>
-                                <i class="ri-message-2-line ri-lg"></i>
-                            </button>
-                        </div>
-                        <div id="firstBtn2">
-                            <button><i class="ri-bookmark-line ri-lg"></i></button>
-                        </div>
-                    </div>
-                   </div>
                 </div>
                 <div id="imgBox2">
                     <img src="https://st2.depositphotos.com/2547675/7689/i/950/depositphotos_76893517-stock-photo-rest.jpg"
-                    alt="">
+                        alt="">
                 </div>
             </div>
             <div id="firstButtons">
@@ -227,7 +229,7 @@
                     <h4>Click On The Icon To Play The Music Or Podcast 🎧</h4>
                 </div>
                 <div id="thirdData">
-                    <div class="thirdData">
+                    <div class="thirdData thirdData1" >
                         <div class="tDataImg">
                             <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                     <path
@@ -243,7 +245,7 @@
                             <h5>Fones Mimi &nbsp; <span>May 20,2021</span></h5>
                         </div>
                     </div>
-                    <div class="thirdData">
+                    <div class="thirdData thirdData1">
                         <div class="tDataImg">
                             <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                     <path
@@ -259,7 +261,7 @@
                             <h5>Fones Mimi &nbsp; <span>May 20,2021</span></h5>
                         </div>
                     </div>
-                    <div class="thirdData">
+                    <div class="thirdData thirdData2">
                         <div class="tDataImg">
                             <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                     <path
@@ -275,7 +277,7 @@
                             <h5>Fones Mimi &nbsp; <span>May 20,2021</span></h5>
                         </div>
                     </div>
-                    <div class="thirdData">
+                    <div class="thirdData thirdData2">
                         <div class="tDataImg">
                             <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                     <path
@@ -674,8 +676,8 @@
             </div>
         </div>
         <div id="page6">
-                <h1>Listen To Podcasts Live</h1>
-                <h4>Click On Play Icon And Enjoy PodCast</h4>
+            <h1>Listen To Podcasts Live</h1>
+            <h4>Click On Play Icon And Enjoy PodCast</h4>
             <div id="main6">
                 <div id="main6Right">
                     <div class="right6Video">
@@ -684,8 +686,8 @@
                             <div class="video6btn2"><button><i class="ri-play-circle-line"></i></button></div>
                             <img src="https://images.unsplash.com/photo-1518887572120-cae9ec0daab6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29uZyUyMGltZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                 alt="">
-                        </div>
-                        <div class="video6Data">
+                         </div>
+                         <div class="video6Data">
                             <div class="data6Head">
                                 <h2>Listen To Podcasts Live</h2> <br>
                                 <h5>Click On Play Icon And Enjoy PodCast</h5>
@@ -705,8 +707,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="right6Video">
+                     </div>
+                     <div class="right6Video">
                         <div class="video6Img">
                             <div class="video6btn1"><button>Industrial</button></div>
                             <div class="video6btn2"><button><i class="ri-play-circle-line"></i></button></div>
@@ -739,7 +741,8 @@
                     <div class="left6box">
                         <div class="left6data">
                             <div class="data6img">
-                                <img src="https://images.unsplash.com/photo-1576493095524-30aed531dfa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbmclMjBpbWd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <img src="https://images.unsplash.com/photo-1576493095524-30aed531dfa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbmclMjBpbWd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
                             </div>
                             <div class="data6Head">
                                 <h3>Chaku & Churi</h3>
@@ -753,7 +756,8 @@
                     <div class="left6box">
                         <div class="left6data">
                             <div class="data6img">
-                                <img src="https://images.unsplash.com/photo-1576493095524-30aed531dfa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbmclMjBpbWd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <img src="https://images.unsplash.com/photo-1576493095524-30aed531dfa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbmclMjBpbWd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
                             </div>
                             <div class="data6Head">
                                 <h3>Chaku & Churi</h3>
@@ -767,7 +771,8 @@
                     <div class="left6box">
                         <div class="left6data">
                             <div class="data6img">
-                                <img src="https://images.unsplash.com/photo-1576493095524-30aed531dfa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbmclMjBpbWd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <img src="https://images.unsplash.com/photo-1576493095524-30aed531dfa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbmclMjBpbWd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
                             </div>
                             <div class="data6Head">
                                 <h3>Chaku & Churi</h3>
@@ -781,7 +786,8 @@
                     <div class="left6box">
                         <div class="left6data">
                             <div class="data6img">
-                                <img src="https://images.unsplash.com/photo-1576493095524-30aed531dfa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbmclMjBpbWd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                <img src="https://images.unsplash.com/photo-1576493095524-30aed531dfa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbmclMjBpbWd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
                             </div>
                             <div class="data6Head">
                                 <h3>Chaku & Churi</h3>
@@ -804,11 +810,12 @@
                         <br>
                     </div>
                     <div id="right7Data">
-                        <img src="https://images.unsplash.com/photo-1518887572120-cae9ec0daab6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29uZyUyMGltZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                       <div id="data7Head">
-                        <h3>Chaku</h3>
-                        <h5>May 20,2023</h5>
-                       </div>
+                        <img src="https://images.unsplash.com/photo-1518887572120-cae9ec0daab6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29uZyUyMGltZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+                        <div id="data7Head">
+                            <h3>Chaku</h3>
+                            <h5>May 20,2023</h5>
+                        </div>
                     </div>
                     <br>
                     <div id="right7Btn">
@@ -831,14 +838,11 @@
             </div>
         </div>
     </div>
+  </div>
 
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 
